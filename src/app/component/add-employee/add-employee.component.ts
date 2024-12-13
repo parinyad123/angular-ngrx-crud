@@ -6,11 +6,13 @@ import { MatInputModule } from '@angular/material/input';
 import { MatButtonModule } from '@angular/material/button';
 import { MatSelectModule } from '@angular/material/select';
 import { MatDatepickerModule } from '@angular/material/datepicker'
+import { provideNativeDateAdapter } from '@angular/material/core';
 
 @Component({
   selector: 'app-add-employee',
   imports: [MatCardModule, ReactiveFormsModule, MatFormFieldModule, 
     MatButtonModule, MatInputModule, MatSelectModule, MatDatepickerModule],
+  providers: [provideNativeDateAdapter()],
   templateUrl: './add-employee.component.html',
   styleUrls: ['./add-employee.component.css']
 })
