@@ -1,1 +1,32 @@
-<p>add-employee works!</p>
+<mat-card>
+    <mat-card-header>
+        <h2>{{ title }}</h2>
+        
+    </mat-card-header>
+
+    <mat-card-content>
+        <form [formGroup]="empForm" (ngSubmit)="SaveEmployee()">
+            <mat-form-field>
+                <mat-label>Employee Id</mat-label>
+                <input matInput formControlName="id">
+            </mat-form-field>
+            <mat-form-field>
+                <mat-label>Employee Name</mat-label>
+                <input matInput formControlName="name">
+            </mat-form-field>
+            <mat-form-field>
+                <mat-label>Employee Salary</mat-label>
+                <input matInput formControlName="salary">
+            </mat-form-field>
+            <mat-form-field>
+                <mat-label>Employee Joining</mat-label>
+                <input matInput formControlName="doj">
+            </mat-form-field>
+            <mat-form-field>
+                <mat-label>Employee Role</mat-label>
+                <input matInput formControlName="role">
+            </mat-form-field>
+        </form>
+
+    </mat-card-content>
+</mat-card>
