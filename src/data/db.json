@@ -1,18 +1,46 @@
 {
   "employee": [
     {
-      "id": "52",
-      "name": "Uyth",
-      "doj": "2024-12-16T05:07:08.700Z",
-      "role": "operator",
-      "salary": "300000"
-    },
-    {
       "id": "20",
       "name": "Lojh",
       "doj": "2024-12-04T17:00:00.000Z",
       "role": "operator",
       "salary": "650000"
+    },
+    {
+      "id": "10",
+      "name": "Par",
+      "doj": "2022-06-06T17:00:00.000Z",
+      "role": "operator",
+      "salary": "875400"
+    },
+    {
+      "id": "40",
+      "name": "Udon",
+      "doj": "2024-12-12T17:00:00.000Z",
+      "role": "manager",
+      "salary": "96000"
+    },
+    {
+      "id": "96",
+      "name": "Trag",
+      "doj": "2024-12-11T17:00:00.000Z",
+      "role": "operator",
+      "salary": "93600"
+    },
+    {
+      "id": "96",
+      "name": "Tragerr",
+      "doj": "2024-12-11T17:00:00.000Z",
+      "role": "operator",
+      "salary": "96250"
+    },
+    {
+      "id": "40",
+      "name": "huntter",
+      "doj": "2024-12-12T17:00:00.000Z",
+      "role": "operator",
+      "salary": "9600000"
     }
   ]
 }
