@@ -7,6 +7,9 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatSelectModule } from '@angular/material/select';
 import { MatDatepickerModule } from '@angular/material/datepicker'
 import { provideNativeDateAdapter } from '@angular/material/core';
+import { Employee } from '../../model/Employee';
+import { EmployeeService } from '../../service/employee.service';
+import { MatDialogRef } from '@angular/material/dialog';
 
 @Component({
   selector: 'app-add-employee',
@@ -17,6 +20,11 @@ import { provideNativeDateAdapter } from '@angular/material/core';
   styleUrls: ['./add-employee.component.css']
 })
 export class AddEmployeeComponent {
+
+  constructor(private service:EmployeeService, private ref:MatDialogRef<AddEmployeeComponent>) {
+
+  }
+
   title = 'Add Employee';
   empForm = new FormGroup({
     id: new FormControl(0),
@@ -28,5 +36,23 @@ export class AddEmployeeComponent {
 
   SaveEmployee() {
     
+    if (this.empForm.valid) {
+      console.log(this.empForm.value);
+
+      let _data:Employee = {
+        id: this.empForm.value.id as number,
+        name: this.empForm.value.name as string,
+        doj: new Date(this.empForm.value.doj as Date),
+        role: this.empForm.value.role as string,
+        salary: this.empForm.value.salary as number,
+      }
+      this.service.Create(_data).subscribe(item=> {
+        alert('saved');
+        this.closepopup();
+      });
+    }
+  }
+  closepopup() {
+    this.ref.close();
   }
 }

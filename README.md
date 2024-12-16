@@ -18,4 +18,6 @@
         npx json-server --watch src/data/db.json
 
 
-- json-server --watch src/data/db.json
+- npx json-server --watch src/data/db.json
+
+https://youtu.be/ItQYxGDacW4?t=1690
