@@ -5,3 +5,7 @@
 .mdc-button {
     margin: 2px;
 }
+
+.mat-mdc-card-header {
+    margin-bottom: 10px
+}

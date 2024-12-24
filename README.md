@@ -1,6 +1,12 @@
 # Install 
 - ng add @angular/material
 - npm i ngx-toastr
+- ng add @ngrx/store 
+
+## beta commands for NGRX for Angular 19
+- npm i @ngrx/store@19.0.0-rc.0
+- npm i @ngrx/effects@19.0.0-rc.0
+- npm i @ngrx/store-devtools@19.0.0-rc.0
 
 # Create componants
 - ng g c component/employee
@@ -20,4 +26,6 @@
 
 - npx json-server --watch src/data/db.json
 
-https://youtu.be/ItQYxGDacW4?t=1690
+
+https://youtu.be/ItQYxGDacW4?t=4212
+https://youtu.be/ItQYxGDacW4?t=6069
